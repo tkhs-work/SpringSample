@@ -38,6 +38,13 @@ jobs:
       run: |
         ls -ltr
         ls -ltr ./target
-        mv ./target/SpringSample-0.0.1-SNAPSHOT.jar ./
-        docker build -t myapp
 
+    - name: Set up buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Build and push images
+      uses: docker/build-push-action@v3
+      with:
+        context: .
+        file: ./Dockerfile
+        push: false
