@@ -38,5 +38,6 @@ jobs:
       run: |
         ls -ltr
         ls -ltr ./target
-        cd ./target
-        docker build ../Dockerfile
+        mv ./target/SpringSample-0.0.1-SNAPSHOT.jar ./
+        docker build ./Dockerfile
+
