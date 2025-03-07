@@ -46,9 +46,10 @@ jobs:
     - name: Build and push images
       uses: docker/build-push-action@v3
       with:
-        context: myapp
+        context: .
         file: ./Dockerfile
         push: false
+        tags: myapp:latest
           
     - name: free
       run: |
