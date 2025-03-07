@@ -38,3 +38,5 @@ jobs:
       run: |
         ls -ltr
         ls -ltr ./target
+        cd ./target
+        docker build
