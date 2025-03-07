@@ -39,4 +39,4 @@ jobs:
         ls -ltr
         ls -ltr ./target
         cd ./target
-        docker build
+        docker build ../Dockerfile
