@@ -55,6 +55,7 @@ jobs:
         file: ./Dockerfile
         push: false
         load: true
+        tags: myapp:latest
           
     - name: free
       run: |
