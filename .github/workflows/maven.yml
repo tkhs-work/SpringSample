@@ -56,8 +56,8 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ghcr.io/hotogayato/springsample/myapp:latest
-        load: true
+        tags: ghcr.io/hotogayato/myapp:latest
+        load: false
           
     - name: free
       run: |
