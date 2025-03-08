@@ -57,7 +57,7 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: ghcr.io/hotogayato/myapp:latest
-        load: false
+        load: true
           
     - name: free
       run: |
