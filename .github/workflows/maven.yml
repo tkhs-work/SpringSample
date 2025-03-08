@@ -45,6 +45,7 @@ jobs:
       run: |
         echo "github.actor="${{ github.actor }}
         echo "secrets.GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}
+        echo "secrets.CR_PAT="${{ secrets.CR_PAT }}
         
     - name: "ghcr.ioにログインする"
       uses: docker/login-action@v3
